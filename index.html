@@ -1,158 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eu sou Mariano - Portifólio</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mariano | Estudante de desenvolvimento de software</title>
+    <meta name="description" content="Portfólio de Mariano, estudante de desenvolvimento de software. Projetos em JavaScript, HTML, CSS e Java.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Instrument+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div class="conteiner-carrosel">
-        <div class="carrossel">
-            <div class="item" style="--delay: 0s;"><img src="image/file_type_css_icon_130661.webp" alt=""></div>
-            <div class="item" style="--delay: 0.5s;"><img src="image/html5_18891.webp" alt=""></div>
-            <div class="item" style="--delay: 1s;"><img src="image/java_original_wordmark_logo_icon_146459.webp" alt="">
-            </div>
-            <div class="item" style="--delay: 1.5s;"><img
-                    src="image/javascript-logo-javascript-icon-transparent-free-png.webp" alt=""></div>
+    <div class="wrap">
+        <header class="topo">
+            <a class="logo" href="#inicio">Mariano</a>
+            <nav aria-label="Principal">
+                <a href="#sobre">Sobre</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#contato">Contato</a>
+            </nav>
+        </header>
 
-            <div class="item" style="--delay: 2s;"><img src="image/file_type_css_icon_130661.webp" alt=""></div>
-            <div class="item" style="--delay: 2.5s;"><img src="image/html5_18891.webp" alt=""></div>
-            <div class="item" style="--delay: 3s;"><img src="image/java_original_wordmark_logo_icon_146459.webp" alt="">
+        <section class="hero" id="inicio">
+            <div class="hero-texto">
+                <h1>
+                    <span class="linha">Eu sou Mariano</span>
+                    <span class="linha">e uso <span class="palavra" id="palavra">JavaScript</span></span>
+                </h1>
+                <p class="lead">Tenho 18 anos e estudo desenvolvimento de software. Aqui estão os projetos que já construí.</p>
+                <div class="acoes">
+                    <a class="botao botao-escuro" href="#projetos">Ver projetos</a>
+                    <a class="botao botao-sol" href="#contato">Falar comigo</a>
+                </div>
             </div>
-            <div class="item" style="--delay: 3.5s;"><img
-                    src="image/javascript-logo-javascript-icon-transparent-free-png.webp" alt=""></div>
-
-            <div class="item" style="--delay: 4s;"><img src="image/file_type_css_icon_130661.webp" alt=""></div>
-            <div class="item" style="--delay: 4.5s;"><img src="image/html5_18891.webp" alt=""></div>
-            <div class="item" style="--delay: 5s;"><img src="image/java_original_wordmark_logo_icon_146459.webp" alt="">
-            </div>
-            <div class="item" style="--delay: 5.5s;"><img
-                    src="image/javascript-logo-javascript-icon-transparent-free-png.webp" alt=""></div>
-
-            <div class="item" style="--delay: 6s;"><img src="image/file_type_css_icon_130661.webp" alt=""></div>
-            <div class="item" style="--delay: 6.5s;"><img src="image/html5_18891.webp" alt=""></div>
-            <div class="item" style="--delay: 7s;"><img src="image/java_original_wordmark_logo_icon_146459.webp" alt="">
-            </div>
-            <div class="item" style="--delay: 7.5s;"><img
-                    src="image/javascript-logo-javascript-icon-transparent-free-png.webp" alt=""></div>
-
-            <div class="item" style="--delay: 8s;"><img src="image/file_type_css_icon_130661.webp" alt=""></div>
-            <div class="item" style="--delay: 8.5s;"><img src="image/html5_18891.webp" alt=""></div>
-            <div class="item" style="--delay: 9s;"><img src="image/java_original_wordmark_logo_icon_146459.webp" alt="">
-            </div>
-            <div class="item" style="--delay: 9.5s;"><img
-                    src="image/javascript-logo-javascript-icon-transparent-free-png.webp" alt=""></div>
-        </div>
+            <figure class="hero-foto">
+                <img src="image/foto.jpg" alt="Foto de Mariano sorrindo, de óculos, em frente ao computador" width="900" height="1200">
+            </figure>
+        </section>
     </div>
 
-    <header>
-        <div class="conteiner">
-            <h1 id="frase">Eu sou Mariano e uso: </h1>
-            <div class="caixa-linguagens">
-                <div class="linguagens">
-                    <h1 id="item1">Java Script</h1>
-                    <h1 id="item2">Html</h1>
-                    <h1 id="item3">CSS</h1>
-                    <h1 id="item4">Java</h1>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="mini-frase">
-            <small>Venha me conhecer mais!</small>
-        </div>
-
-    </header>
-
     <main>
-        <h2 style="--aparecer: 1.5s;">Sobre mim</h2>
-        <div class="main-infor1">
+        <section class="secao" id="sobre">
+            <div class="wrap duas-colunas">
+                <h2>Sobre mim</h2>
+                <div>
+                    <p>O mercado muda o tempo todo, e foi isso que me levou a explorar o mundo da programação.</p>
+                    <p>Hoje estou focado em melhorar minhas habilidades em JavaScript, HTML, CSS e Java, sempre atrás de novos desafios e de oportunidades para crescer como desenvolvedor.</p>
 
-            <div style="--aparecer: 1.8s;" class="caixa-infor1">
-                <p>Meu nome é Mariano, tenho 18 anos e sou um estudante de desenvolvimento de software. O mercado muda constantemente, o que me levou a explorar omundo da programação.</p>
-            </div>
-
-            <div style="--aparecer: 1.8s;" class="caixa-infor2">
-                <p>Atualmente, estou focado em aprimorar minhas habilidades em JavaScript, HTML, CSS e Java, buscando constantemente novos desafios e oportunidades para crescer como desenvolvedor.</p>
-            </div>
-
-        </div>
-
-        <div class="main-infor2">
-            <div style="--aparecer: 2.1s;" class="caixa-infor3">
-                <p>Como editor de codigo eu uso o Visual Studio Code.</p>
-            </div>
-            <img id="vscode" style="--aparecer: 2.1s;" src="image/file_type_vscode_icon_130084.png"
-                alt="Visual Studio Code">
-        </div>
-        
-
-        <div class="main-exemplos-superior">
-            <div class="main-exemplos">
-
-                <div class="mini-frase2">
-                    <p>Veja alguns dos meus projetos</p>
-                </div>
-
-                <div class="exemplo1">
-                    <img src="image/Captura de tela 2026-05-17 160651.png" alt="Exemplo1" id="Ex1">
-                    <p id="frase-imagem">• Um carrossel infinito dos personages do jogo Valorant, contendo o nome, classe e
-                        imagem do personagem.</p>
-
-                        <a href="https://mariano-dev01.github.io/Carrossel-Valorant-Prototipo/" target="_blank" class="btn-projeto">Veja aqui</a>
-
-                </div>
-
-                <div class="exemplo2">
-                    <img src="image/Captura de tela 2026-05-17 162347.png" alt="Exemplo2" id="Ex2">
-                    <p id="frase-imagem">• Um pequeno projeto de formulário contendo o nome do funcionário de maneira
-                        semi-automática, o valor semanal e a data de registro.</p>
-
-                        <a href="https://mariano-dev01.github.io/Relatorios-Prototipo/" target="_blank" class="btn-projeto">Veja aqui</a>
-
-                </div>
-
-                <div class="exemplo3">
-                    <img src="image/Captura de tela 2026-05-17 162519.png" alt="Exemplo3" id="Ex3">
-                    <p id="frase-imagem">• Um site informativo mostrando algumas imagens de Salvador-BA, com links para
-                        companias aéreas</p>
-
-                        <a href="https://mariano-dev01.github.io/Salvador-Prototipo/" target="_blank" class="btn-projeto">Veja aqui</a>
+                    <h3>Com o que eu trabalho</h3>
+                    <ul class="ferramentas">
+                        <li><img src="image/js.webp" alt="" width="28" height="28">JavaScript</li>
+                        <li><img src="image/html.webp" alt="" width="28" height="28">HTML</li>
+                        <li><img src="image/css.webp" alt="" width="28" height="28">CSS</li>
+                        <li><img src="image/java.webp" alt="" width="28" height="28">Java</li>
+                        <li><img src="image/vscode.png" alt="" width="28" height="28">Visual Studio Code</li>
+                    </ul>
                 </div>
             </div>
-        </div>        
+        </section>
+
+        <section class="secao" id="projetos">
+            <div class="wrap">
+                <h2>Projetos</h2>
+
+                <article class="projeto">
+                    <a class="quadro" href="https://mariano-dev01.github.io/Carrossel-Valorant-Prototipo/" target="_blank" rel="noopener" aria-label="Abrir o projeto Carrossel Valorant">
+                        <div class="barra" aria-hidden="true"><span></span><span></span><span></span></div>
+                        <img src="image/projeto-valorant.webp" alt="Carrossel com a personagem Fade e a palavra Iniciador ao fundo" loading="lazy" width="1364" height="626">
+                    </a>
+                    <div class="projeto-texto">
+                        <h3>Carrossel Valorant</h3>
+                        <p>Um carrossel infinito com os personagens do jogo Valorant, mostrando o nome, a classe e a imagem de cada um.</p>
+                        <a class="botao botao-escuro" href="https://mariano-dev01.github.io/Carrossel-Valorant-Prototipo/" target="_blank" rel="noopener">Ver projeto</a>
+                    </div>
+                </article>
+
+                <article class="projeto">
+                    <a class="quadro" href="https://mariano-dev01.github.io/Relatorios-Prototipo/" target="_blank" rel="noopener" aria-label="Abrir o projeto Central de Relatórios">
+                        <div class="barra" aria-hidden="true"><span></span><span></span><span></span></div>
+                        <img src="image/projeto-relatorios.webp" alt="Formulário de registro ao lado de uma tabela com funcionário, valor e data" loading="lazy" width="1365" height="641">
+                    </a>
+                    <div class="projeto-texto">
+                        <h3>Central de Relatórios</h3>
+                        <p>Um formulário que registra o nome do funcionário de forma semiautomática, o valor semanal e a data do registro.</p>
+                        <a class="botao botao-escuro" href="https://mariano-dev01.github.io/Relatorios-Prototipo/" target="_blank" rel="noopener">Ver projeto</a>
+                    </div>
+                </article>
+
+                <article class="projeto">
+                    <a class="quadro" href="https://mariano-dev01.github.io/Salvador-Prototipo/" target="_blank" rel="noopener" aria-label="Abrir o projeto Passagens para Salvador">
+                        <div class="barra" aria-hidden="true"><span></span><span></span><span></span></div>
+                        <img src="image/projeto-salvador.webp" alt="Página de passagens aéreas para Salvador com fotos de viajantes" loading="lazy" width="1364" height="633">
+                    </a>
+                    <div class="projeto-texto">
+                        <h3>Passagens para Salvador</h3>
+                        <p>Um site informativo com imagens de Salvador, na Bahia, e links para as companhias aéreas.</p>
+                        <a class="botao botao-escuro" href="https://mariano-dev01.github.io/Salvador-Prototipo/" target="_blank" rel="noopener">Ver projeto</a>
+                    </div>
+                </article>
+            </div>
+        </section>
     </main>
-        <hr id="hr-footer1"><hr><hr>
-    <footer>
 
-
-        <div  class="mini-frase3">
-            <p>Gostou? entra em contato comigo</p>
+    <footer class="contato" id="contato">
+        <div class="wrap">
+            <h2>Gostou? Entre em contato.</h2>
+            <ul class="contatos">
+                <li><a href="mailto:devmariano01@gmail.com"><i class="bi bi-envelope-fill" aria-hidden="true"></i><span>devmariano01@gmail.com</span></a></li>
+                <li><a href="https://wa.me/5571982323349" target="_blank" rel="noopener"><i class="bi bi-whatsapp" aria-hidden="true"></i><span>WhatsApp (71) 98232-3349</span></a></li>
+                <li><a href="tel:+5571996195705"><i class="bi bi-telephone-fill" aria-hidden="true"></i><span>Telefone (71) 99619-5705</span></a></li>
+            </ul>
+            <p class="rodape">Feito por Mariano</p>
         </div>
-
-        <div class="caixa-informacao">
-            <div class="contato-informacoes">
-                <p><i class="bi bi-envelope-fill"></i><strong>Email:</strong> devmariano01@gmail.com</p>
-                <p><i class="bi bi-phone-fill"></i><strong>WhatsApp:</strong> (71) 98232-3349</p>
-                <p><i class="bi bi-telephone-fill"></i><strong>Telefone:</strong> (71) 99619-5705</p>
-            </div>
-
-            <div class="foto-informacao">
-                <img src="image/1000146860.png" alt="Foto da pessoa">
-            </div>            
-        </div>
-
     </footer>
 
-   
-
-
+    <script src="js/script.js"></script>
 </body>
-
 </html>
